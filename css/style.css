@@ -602,9 +602,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   ul.timeline > li > .timeline-panel {
-    width: calc(100% - 200px);
-    width: -moz-calc(100% - 200px);
-    width: -webkit-calc(100% - 200px);
+    width: calc(100% - 100px);
+    width: -moz-calc(100% - 100px);
+    width: -webkit-calc(100% - 100px);
   }
 
   ul.timeline > li > .timeline-badge {
