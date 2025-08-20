@@ -1879,24 +1879,23 @@ form label {
   background: url(../images/loader.gif) center no-repeat #fff;
 }
 .author-credit {
-  position: fixed;
+  position: fixed !important;
   bottom: 5px;
   left: 0;
   width: 100%;
   text-align: center;
   font-size: 12px;
   color: #aaa;
-  z-index: 1000;
+  z-index: 99999;  /* ensure it's above everything */
+  background: transparent; /* no box behind */
+  pointer-events: none; /* so it doesn’t block clicks */
 }
 
 .author-credit a {
   color: #ff4081;
   text-decoration: none;
   font-weight: 500;
-}
-
-.author-credit a:hover {
-  text-decoration: underline;
+  pointer-events: auto; /* re-enable link clicks */
 }
 
 
