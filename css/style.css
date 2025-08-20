@@ -1882,5 +1882,11 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+.event-title {
+  font-family: 'Dancing Script', cursive; /* Example: Stylish font */
+  font-size: 28px;  /* Adjust size */
+  font-weight: bold; /* or normal */
+  color: #000;       /* Change color if needed */
+}
 
 /*# sourceMappingURL=style.css.map */
