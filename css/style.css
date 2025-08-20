@@ -1878,6 +1878,23 @@ form label {
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
 }
+.author-credit {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.author-credit a {
+  color: #ff4081;  /* pinkish color for Instagram link */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.author-credit a:hover {
+  text-decoration: underline;
+}
 
 .js .animate-box {
   opacity: 0;
