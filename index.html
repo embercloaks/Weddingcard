@@ -253,7 +253,25 @@
         enableUtc: false
     });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var mapLink = document.getElementById("map-link");
 
+    // Your wedding venue location (Himaya Convention Center, Velliyur)
+    var googleMapsURL = "https://www.google.com/maps/search/?api=1&query=Himaya+Convention+Center,+Velliyur";
+    var appleMapsURL = "http://maps.apple.com/?q=Himaya+Convention+Center,+Velliyur";
+
+    // Detect iOS
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    // Set link based on device
+    if (isIOS) {
+      mapLink.href = appleMapsURL;
+    } else {
+      mapLink.href = googleMapsURL;
+    }
+  });
+</script>
 
 	</body>
 </html>
