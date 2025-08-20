@@ -205,23 +205,31 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    // Wedding Date: October 26, 2025, at 12:00 PM
+    var weddingDate = new Date(2025, 9, 26, 12, 0, 0); 
+    // Note: Month is 0-based (0 = January, 9 = October)
 
-    // default example
     simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
+        year: weddingDate.getFullYear(),
+        month: weddingDate.getMonth() + 1,  // JS months start from 0
+        day: weddingDate.getDate(),
+        hours: weddingDate.getHours(),
+        minutes: weddingDate.getMinutes(),
+        seconds: weddingDate.getSeconds()
     });
 
-    //jQuery example
+    // jQuery version
     $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
+        year: weddingDate.getFullYear(),
+        month: weddingDate.getMonth() + 1,
+        day: weddingDate.getDate(),
+        hours: weddingDate.getHours(),
+        minutes: weddingDate.getMinutes(),
+        seconds: weddingDate.getSeconds(),
         enableUtc: false
     });
 </script>
+
 
 	</body>
 </html>
