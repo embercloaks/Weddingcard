@@ -1897,6 +1897,22 @@ form label {
   font-weight: 500;
   pointer-events: auto; /* re-enable link clicks */
 }
+.author-credit {
+  position: fixed !important;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa !important;
+  z-index: 99999 !important;
+}
+
+.author-credit a {
+  color: #ff4081 !important;
+  text-decoration: none;
+  font-weight: 500;
+}
 
 
 .js .animate-box {
