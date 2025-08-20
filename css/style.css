@@ -946,10 +946,10 @@ form label {
   height: 100px;
   background: rgba(241, 78, 149, 0.8);
   margin: 0 4px;
-  -webkit-border-radius: 40%;
-  -moz-border-radius: 40%;
-  -ms-border-radius: 40%;
-  border-radius: 40%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;
 }
