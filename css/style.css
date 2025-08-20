@@ -991,6 +991,47 @@ form label {
   font-size: 10px;
   /* words */
 }
+/* Responsive countdown circles */
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    width: 70px;   /* smaller on tablets/phones */
+    height: 70px;
+    margin: 2px;
+  }
+
+  .simply-countdown > .simply-section > div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 18px; /* shrink numbers */
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 9px; /* shrink labels */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section {
+    width: 60px;   /* even smaller on very small screens */
+    height: 60px;
+  }
+
+  .simply-countdown > .simply-section > div {
+    width: 60px;
+    height: 60px;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 16px;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 8px;
+  }
+}
 
 #fh5co-testimonial,
 #fh5co-services,
