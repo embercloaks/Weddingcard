@@ -1914,6 +1914,15 @@ form label {
   font-weight: 500;
 }
 
+.author-credit {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  font-size: 20px;
+  color: red !important;
+  background: yellow;
+  z-index: 999999;
+}
 
 .js .animate-box {
   opacity: 0;
