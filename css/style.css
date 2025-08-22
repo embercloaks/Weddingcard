@@ -1913,6 +1913,20 @@ form label {
   text-decoration: none;
   font-weight: 500;
 }
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .js .animate-box {
   opacity: 0;
